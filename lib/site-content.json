@@ -1,0 +1,11 @@
+{
+  "brand": "Reveal It",
+  "routes": ["/", "/reveal-fit", "/foundation", "/foundation/anbi", "/contact", "/privacy"],
+  "services": ["Personal training", "Groepslessen", "Online coaching", "Trainingsschema’s", "Voedingsschema’s", "Lifestylebegeleiding", "B2B-vitaliteitsprogramma’s", "Bedrijfstrainingen", "Workshops voor organisaties"],
+  "recipient": null,
+  "paymentUrl": null,
+  "rsin": null,
+  "kvk": null,
+  "contactMode": "local-draft",
+  "schemaType": "WebSite"
+}

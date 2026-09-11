@@ -1,0 +1,5 @@
+import type {Metadata} from 'next';
+import './globals.css';
+import {Header,Footer} from '@/components/reveal';
+export const metadata:Metadata={title:{default:'Reveal It | Discipline builds destiny',template:'%s | Reveal It'},description:'Reveal It verbindt training, coaching en persoonlijke ontwikkeling. Ontdek Reveal Fit en Reveal It Foundation.',metadataBase:new URL('https://reveal-it.urvinbanda.chatgpt.site'),icons:{icon:'/favicon.svg',shortcut:'/favicon.svg'}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="nl"><head><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@type':'WebSite',name:'Reveal It',url:'https://reveal-it.urvinbanda.chatgpt.site',description:'Training, coaching en persoonlijke ontwikkeling via Reveal Fit en Reveal It Foundation.',inLanguage:'nl'})}}/></head><body><a className="skip-link" href="#main">Ga naar inhoud</a><Header/>{children}<Footer/></body></html>}
