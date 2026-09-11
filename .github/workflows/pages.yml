@@ -44,6 +44,12 @@ jobs:
       - name: Run lint
         run: pnpm run lint
 
+      - name: Prepare CI hosting manifest
+        shell: bash
+        run: |
+          mkdir -p .openai
+          printf '{"d1":null,"r2":null}\n' > .openai/hosting.json
+
       - name: Build Vinext app
         run: pnpm run build
 
