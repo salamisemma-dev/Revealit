@@ -62,10 +62,6 @@ jobs:
           cp index.html pages-dist/index.html
           cp -R public pages-dist/public
 
-      - name: Configure Pages
-        if: github.event_name != 'pull_request'
-        uses: actions/configure-pages@v5
-
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4
