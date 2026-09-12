@@ -1,13 +1,17 @@
 <svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Reveal Fit naar Foundation</title>
-  <desc id="desc">Een subtiele lijnillustratie van persoonlijke groei naar gezamenlijke basis.</desc>
-  <path d="M86 242C167 210 231 159 306 156C385 153 421 214 498 202C580 190 628 104 710 110C802 116 829 229 923 229C999 229 1046 166 1117 141" stroke="#B99662" stroke-width="10" stroke-linecap="round"/>
-  <path d="M95 245C173 214 232 171 303 168C376 165 416 222 496 211C585 199 628 118 708 121C794 124 829 239 925 239C1014 239 1058 175 1121 151" stroke="#654B34" stroke-width="3" stroke-linecap="round" opacity=".52"/>
-  <path d="M188 231V180M242 199V138M296 169V105" stroke="#654B34" stroke-width="8" stroke-linecap="round" opacity=".64"/>
-  <path d="M166 231H318" stroke="#654B34" stroke-width="8" stroke-linecap="round" opacity=".64"/>
-  <path d="M470 204C491 181 515 170 544 173C575 176 594 194 612 217" stroke="#B99662" stroke-width="8" stroke-linecap="round" opacity=".8"/>
-  <path d="M693 111C731 89 771 89 808 111" stroke="#654B34" stroke-width="7" stroke-linecap="round" opacity=".55"/>
-  <path d="M1004 219C990 187 1000 152 1030 134C1061 153 1071 187 1057 219" stroke="#654B34" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".58"/>
-  <path d="M948 235C979 215 1011 207 1042 211C1076 215 1105 232 1126 257" stroke="#B99662" stroke-width="8" stroke-linecap="round" opacity=".74"/>
-  <path d="M1013 166C1030 174 1043 188 1051 207" stroke="#654B34" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+  <title id="title">Van verborgen naar compleet</title>
+  <desc id="desc">Een subtiele lijnillustratie waarin een gesloten vorm zich opent tot een compleet geheel.</desc>
+  <path d="M92 184C194 184 223 172 300 172C397 172 434 192 520 181C618 168 666 118 752 130C837 142 862 206 942 213C1014 219 1062 184 1110 150" stroke="#B99662" stroke-width="9" stroke-linecap="round"/>
+  <path d="M100 184C199 187 225 181 303 180C398 179 432 201 522 190C617 178 669 131 751 142C832 152 862 219 940 224C1016 230 1066 195 1116 164" stroke="#654B34" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+  <path d="M170 123C139 138 120 165 120 196C120 227 139 254 170 268" stroke="#654B34" stroke-width="8" stroke-linecap="round" opacity=".58"/>
+  <path d="M230 123C261 138 280 165 280 196C280 227 261 254 230 268" stroke="#654B34" stroke-width="8" stroke-linecap="round" opacity=".58"/>
+  <path d="M160 145C187 133 213 133 240 145M160 247C187 260 213 260 240 247" stroke="#B99662" stroke-width="7" stroke-linecap="round" opacity=".68"/>
+  <path d="M448 94C416 128 398 166 398 206C398 242 415 276 445 302" stroke="#B99662" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <path d="M556 94C588 128 606 166 606 206C606 242 589 276 559 302" stroke="#B99662" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <path d="M475 132C491 157 500 181 502 207C504 181 513 157 529 132" stroke="#654B34" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".52"/>
+  <path d="M706 228C737 201 773 190 814 198C854 206 881 231 902 266" stroke="#654B34" stroke-width="8" stroke-linecap="round" opacity=".48"/>
+  <path d="M778 194C769 162 780 128 810 109C841 129 852 162 843 194" stroke="#B99662" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".72"/>
+  <circle cx="1010" cy="190" r="72" stroke="#654B34" stroke-width="8" opacity=".45"/>
+  <path d="M970 190C984 168 997 157 1010 157C1024 157 1037 168 1050 190M960 217C995 239 1027 239 1062 217" stroke="#B99662" stroke-width="7" stroke-linecap="round" opacity=".72"/>
+  <path d="M1010 92V68M1010 312V288M1108 190H1132M888 190H912M1079 121L1096 104M924 276L941 259M941 121L924 104M1096 276L1079 259" stroke="#654B34" stroke-width="6" stroke-linecap="round" opacity=".38"/>
 </svg>

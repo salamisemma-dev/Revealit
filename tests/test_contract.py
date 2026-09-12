@@ -48,6 +48,8 @@ class WebsiteContract(unittest.TestCase):
         self.assertNotIn('world-word', home)
         self.assertIn('border-radius:50%', html)
         self.assertIn('border-radius:50%', styles)
+        self.assertIn('vertical-align:-.04em', html)
+        self.assertIn('vertical-align:-.04em', styles)
         self.assertIn('border:1px solid var(--sand)', html)
         self.assertIn('border:1px solid #cbb68f', styles)
 
