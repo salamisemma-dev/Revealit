@@ -180,10 +180,10 @@
 @media(prefers-reduced-motion:reduce){.hero-lead .button:after{display:none}}
 
 /* Subtle visual story from Reveal Fit into Foundation, replacing the old text watermark. */
-.world:before{content:"";position:absolute;z-index:1;left:0;right:0;top:4%;height:48%;background:url("/images/reveal-transition-silhouettes.png") no-repeat;opacity:.2;pointer-events:none;filter:saturate(.72) contrast(.96)}
-.world-fit:before{background-position:left center;background-size:205% auto;mix-blend-mode:screen}
-.world-foundation:before{background-position:right center;background-size:205% auto;opacity:.23;mix-blend-mode:multiply}
-@media(max-width:640px){.world:before{left:0;right:0;top:8%;height:40%;background-size:250% auto}.world-fit:before{background-position:left center}.world-foundation:before{background-position:right center}}
+.world:before{content:"";position:absolute;z-index:1;left:0;right:0;top:4%;height:48%;background:url("/images/reveal-transition-silhouettes.png") no-repeat;background-size:280% auto;opacity:.2;pointer-events:none;filter:saturate(.72) contrast(.96)}
+.world-fit:before{background-position:left center;mix-blend-mode:screen;-webkit-mask-image:linear-gradient(90deg,#000 0 56%,transparent 82%);mask-image:linear-gradient(90deg,#000 0 56%,transparent 82%)}
+.world-foundation:before{background-position:right center;opacity:.23;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(90deg,transparent 0 18%,#000 46%);mask-image:linear-gradient(90deg,transparent 0 18%,#000 46%)}
+@media(max-width:640px){.world:before{left:0;right:0;top:8%;height:40%;background-size:330% auto}.world-fit:before{background-position:left center;-webkit-mask-image:linear-gradient(90deg,#000 0 52%,transparent 78%);mask-image:linear-gradient(90deg,#000 0 52%,transparent 78%)}.world-foundation:before{background-position:right center;-webkit-mask-image:linear-gradient(90deg,transparent 0 22%,#000 52%);mask-image:linear-gradient(90deg,transparent 0 22%,#000 52%)}}
 
 /* Final wordmark lock: one logo treatment across home, Reveal Fit, Foundation and footer. */
 .wordmark{display:inline-block;font-weight:600;letter-spacing:-.075em;font-size:42px;line-height:.86}

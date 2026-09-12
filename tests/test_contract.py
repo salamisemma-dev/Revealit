@@ -1,4 +1,5 @@
 import json
+import hashlib
 import unittest
 from pathlib import Path
 
@@ -48,6 +49,11 @@ class WebsiteContract(unittest.TestCase):
         self.assertNotIn('urvinbanda.chatgpt.site', layout)
         self.assertIn('Onze aanpak', html)
         self.assertIn('Onze aanpak', header)
+        self.assertNotIn('next/link', header)
+        for href in ['href="/reveal-fit/"', 'href="/foundation/"', 'href="/contact/"', 'href="/foundation/anbi/"', 'href="/privacy/"']:
+            self.assertIn(href, header)
+        for href in ['href="reveal-fit/"', 'href="foundation/"', 'href="contact/"']:
+            self.assertIn(href, html)
 
         self.assertNotIn('class="word"', html)
         self.assertNotIn('world-word', home)
@@ -67,6 +73,13 @@ class WebsiteContract(unittest.TestCase):
         self.assertTrue((root / watermark).is_file(), watermark)
         self.assertIn(watermark, html)
         self.assertIn('/images/reveal-transition-silhouettes.png', styles)
+        self.assertEqual(hashlib.sha256((root / watermark).read_bytes()).hexdigest(), '0099d0f4d25e9ececdb61d57f07a4b19cc0a649fbcf3d09db75449792dec3b5b')
+        self.assertIn('background-size:280% auto', html)
+        self.assertIn('background-size:280% auto', styles)
+        self.assertIn('background-size:330% auto', html)
+        self.assertIn('background-size:330% auto', styles)
+        self.assertIn('-webkit-mask-image:linear-gradient(90deg,#000 0 56%,transparent 82%)', styles)
+        self.assertIn('-webkit-mask-image:linear-gradient(90deg,transparent 0 18%,#000 46%)', styles)
         self.assertIn('background:linear-gradient(135deg,#2f2821,#4a3a2b)', styles)
         self.assertIn('background:linear-gradient(135deg,#d9cdbb,#eee6da)', styles)
         self.assertIn('node scripts/export-pages.mjs', workflow)

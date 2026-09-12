@@ -87,7 +87,7 @@ export function HeroExperience(){
       <div className="hero-content wrap">
         <p className="hero-kicker"><span/>Jouw groei begint hier</p>
         <h1 id="home-title"><span>Discipline</span><span>builds</span><em>destiny.</em></h1>
-        <div className="hero-lead"><p>Sterker in je lijf. Steviger in het leven.<br/>Training, voeding en coaching voor jouw ontwikkeling.</p><div className="actions"><LinkButton href="/reveal-fit">Ontdek Reveal Fit</LinkButton><a className="hero-foundation-link" href="/foundation">Onze Foundation <Arrow/></a></div></div>
+<div className="hero-lead"><p>Sterker in je lijf. Steviger in het leven.<br/>Training, voeding en coaching voor jouw ontwikkeling.</p><div className="actions"><LinkButton href="/reveal-fit/">Ontdek Reveal Fit</LinkButton><a className="hero-foundation-link" href="/foundation/">Onze Foundation <Arrow/></a></div></div>
         <p className="hero-shift" aria-hidden="true"><span>kracht in jezelf</span><em>ruimte voor een ander</em></p>
       </div>
     </div>

@@ -10,8 +10,8 @@ export interface HomeJourney {
 }
 
 export const homeJourneys:HomeJourney[]=[
-  {href:'/reveal-fit',className:'world-fit',index:'01 / FIT',audience:'Voor jezelf & organisaties',name:'Reveal',emphasis:'Fit',themes:'Training · Voeding · Coaching',cta:'Ontdek jouw traject'},
-  {href:'/foundation',className:'world-foundation',index:'02 / FOUNDATION',audience:'Voor talent & kansen',name:'Reveal It',emphasis:'Foundation',themes:'Zelfvertrouwen · Vaardigheden · Perspectief',cta:'Bekijk onze missie'}
+  {href:'/reveal-fit/',className:'world-fit',index:'01 / FIT',audience:'Voor jezelf & organisaties',name:'Reveal',emphasis:'Fit',themes:'Training · Voeding · Coaching',cta:'Ontdek jouw traject'},
+  {href:'/foundation/',className:'world-foundation',index:'02 / FOUNDATION',audience:'Voor talent & kansen',name:'Reveal It',emphasis:'Foundation',themes:'Zelfvertrouwen · Vaardigheden · Perspectief',cta:'Bekijk onze missie'}
 ];
 
 export const growthSteps=[
