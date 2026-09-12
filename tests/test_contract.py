@@ -71,4 +71,4 @@ class WebsiteContract(unittest.TestCase):
         self.assertIn('background:linear-gradient(135deg,#d9cdbb,#eee6da)', styles)
         self.assertIn('node scripts/export-pages.mjs', workflow)
         self.assertIn('PAGES_BASE_PATH: /Revealit', workflow)
-        self.assertIn('--ignore-pattern pages-dist', package['scripts']['lint'])
+        self.assertIn('--ignore-pattern "pages-dist/**"', package['scripts']['lint'])
