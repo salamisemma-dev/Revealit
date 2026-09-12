@@ -55,12 +55,23 @@ jobs:
       - name: Build Vinext app
         run: pnpm run build
 
-      - name: Prepare standalone Pages site
+      - name: Export static Pages site
         shell: bash
+        env:
+          PAGES_BASE_PATH: /Revealit
         run: |
-          mkdir -p pages-dist
-          cp index.html pages-dist/index.html
-          cp -R public pages-dist/public
+          pnpm run start > wrangler-pages.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for i in {1..90}; do
+            if curl -fsS http://127.0.0.1:8787 >/dev/null; then
+              node scripts/export-pages.mjs
+              exit 0
+            fi
+            sleep 2
+          done
+          cat wrangler-pages.log
+          exit 1
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
