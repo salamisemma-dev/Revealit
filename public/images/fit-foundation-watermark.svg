@@ -1,0 +1,13 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Reveal Fit naar Foundation</title>
+  <desc id="desc">Een subtiele lijnillustratie van persoonlijke groei naar gezamenlijke basis.</desc>
+  <path d="M86 242C167 210 231 159 306 156C385 153 421 214 498 202C580 190 628 104 710 110C802 116 829 229 923 229C999 229 1046 166 1117 141" stroke="#B99662" stroke-width="10" stroke-linecap="round"/>
+  <path d="M95 245C173 214 232 171 303 168C376 165 416 222 496 211C585 199 628 118 708 121C794 124 829 239 925 239C1014 239 1058 175 1121 151" stroke="#654B34" stroke-width="3" stroke-linecap="round" opacity=".52"/>
+  <path d="M188 231V180M242 199V138M296 169V105" stroke="#654B34" stroke-width="8" stroke-linecap="round" opacity=".64"/>
+  <path d="M166 231H318" stroke="#654B34" stroke-width="8" stroke-linecap="round" opacity=".64"/>
+  <path d="M470 204C491 181 515 170 544 173C575 176 594 194 612 217" stroke="#B99662" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+  <path d="M693 111C731 89 771 89 808 111" stroke="#654B34" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+  <path d="M1004 219C990 187 1000 152 1030 134C1061 153 1071 187 1057 219" stroke="#654B34" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".58"/>
+  <path d="M948 235C979 215 1011 207 1042 211C1076 215 1105 232 1126 257" stroke="#B99662" stroke-width="8" stroke-linecap="round" opacity=".74"/>
+  <path d="M1013 166C1030 174 1043 188 1051 207" stroke="#654B34" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+</svg>

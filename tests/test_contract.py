@@ -31,3 +31,27 @@ class WebsiteContract(unittest.TestCase):
             'public/media/hero-poster-mobile.webp',
         ]:
             self.assertTrue((root / asset).is_file(), asset)
+
+    def test_homepage_visual_adjustments_are_kept_in_sync(self):
+        root = Path(__file__).parents[1]
+        html = (root / 'index.html').read_text(encoding='utf-8')
+        header = (root / 'components/reveal.tsx').read_text(encoding='utf-8')
+        home = (root / 'app/page.tsx').read_text(encoding='utf-8')
+        styles = (root / 'app/globals.css').read_text(encoding='utf-8')
+
+        self.assertNotIn('Over Reveal It', html)
+        self.assertNotIn('Over Reveal It', header)
+        self.assertIn('Onze aanpak', html)
+        self.assertIn('Onze aanpak', header)
+
+        self.assertNotIn('class="word"', html)
+        self.assertNotIn('world-word', home)
+        self.assertIn('border-radius:50%', html)
+        self.assertIn('border-radius:50%', styles)
+        self.assertIn('border:1px solid var(--sand)', html)
+        self.assertIn('border:1px solid #cbb68f', styles)
+
+        watermark = 'public/images/fit-foundation-watermark.svg'
+        self.assertTrue((root / watermark).is_file(), watermark)
+        self.assertIn(watermark, html)
+        self.assertIn('/images/fit-foundation-watermark.svg', styles)
