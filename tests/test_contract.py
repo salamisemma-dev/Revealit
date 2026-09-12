@@ -46,14 +46,19 @@ class WebsiteContract(unittest.TestCase):
 
         self.assertNotIn('class="word"', html)
         self.assertNotIn('world-word', home)
-        self.assertIn('border-radius:50%', html)
-        self.assertIn('border-radius:50%', styles)
-        self.assertIn('vertical-align:-.04em', html)
-        self.assertIn('vertical-align:-.04em', styles)
+        self.assertIn('border-radius:999px', html)
+        self.assertIn('border-radius:999px', styles)
+        self.assertIn('display:inline-flex', html)
+        self.assertIn('display:inline-flex', styles)
+        self.assertIn('margin-bottom:.01em', html)
+        self.assertIn('margin-bottom:.01em', styles)
         self.assertIn('border:1px solid var(--sand)', html)
         self.assertIn('border:1px solid #cbb68f', styles)
 
         watermark = 'public/images/fit-foundation-watermark.svg'
+        watermark_text = (root / watermark).read_text(encoding='utf-8')
         self.assertTrue((root / watermark).is_file(), watermark)
         self.assertIn(watermark, html)
         self.assertIn('/images/fit-foundation-watermark.svg', styles)
+        self.assertIn('Gezichtloze silhouetten', watermark_text)
+        self.assertIn('van persoonlijke discipline naar open houding', watermark_text)

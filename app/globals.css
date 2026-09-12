@@ -184,3 +184,7 @@
 .world-fit:before{background-position:left center;background-size:180% auto;mix-blend-mode:screen}
 .world-foundation:before{background-position:right center;background-size:180% auto;opacity:.34;mix-blend-mode:multiply}
 @media(max-width:640px){.world:before{left:10%;right:10%;top:14%;height:30%;background-size:210% auto}.world-fit:before{background-position:left center}.world-foundation:before{background-position:right center}}
+
+/* Final wordmark lock: one logo treatment across home, Reveal Fit, Foundation and footer. */
+.wordmark{display:inline-flex;align-items:flex-end;line-height:1}
+.wordmark-period{width:.145em;height:.145em;margin-left:.05em;margin-bottom:.01em;border-radius:999px;background:#987741;color:transparent;line-height:0;overflow:hidden;flex:0 0 auto;vertical-align:baseline}
