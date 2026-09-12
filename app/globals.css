@@ -180,10 +180,10 @@
 @media(prefers-reduced-motion:reduce){.hero-lead .button:after{display:none}}
 
 /* Subtle visual story from Reveal Fit into Foundation, replacing the old text watermark. */
-.world:before{content:"";position:absolute;z-index:2;left:0;right:0;top:4%;height:48%;background:url("/images/reveal-transition-silhouettes.png") no-repeat;background-size:280% auto;opacity:.2;pointer-events:none;filter:saturate(.72) contrast(.96)}
-.world-fit:before{background-position:22% center;opacity:.26;mix-blend-mode:screen;-webkit-mask-image:linear-gradient(90deg,#000 0 56%,transparent 82%);mask-image:linear-gradient(90deg,#000 0 56%,transparent 82%)}
-.world-foundation:before{background-position:72% center;opacity:.23;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(90deg,transparent 0 18%,#000 46%);mask-image:linear-gradient(90deg,transparent 0 18%,#000 46%)}
-@media(max-width:640px){.world:before{left:0;right:0;top:8%;height:40%;background-size:330% auto}.world-fit:before{background-position:24% center;-webkit-mask-image:linear-gradient(90deg,#000 0 52%,transparent 78%);mask-image:linear-gradient(90deg,#000 0 52%,transparent 78%)}.world-foundation:before{background-position:64% center;-webkit-mask-image:linear-gradient(90deg,transparent 0 22%,#000 52%);mask-image:linear-gradient(90deg,transparent 0 22%,#000 52%)}}
+.world:before{content:"";position:absolute;z-index:2;left:0;right:0;top:18%;height:54%;background:url("/images/reveal-transition-silhouettes.png") no-repeat;background-size:420% auto;opacity:.24;pointer-events:none;filter:saturate(.72) contrast(.96)}
+.world-fit:before{background-position:26% center;opacity:.34;mix-blend-mode:screen;-webkit-mask-image:linear-gradient(90deg,#000 0 68%,transparent 94%);mask-image:linear-gradient(90deg,#000 0 68%,transparent 94%)}
+.world-foundation:before{background-position:76% center;opacity:.3;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(90deg,transparent 0 4%,#000 28%);mask-image:linear-gradient(90deg,transparent 0 4%,#000 28%)}
+@media(max-width:640px){.world:before{left:0;right:0;top:18%;height:48%;background-size:455% auto;opacity:.26}.world-fit:before{background-position:28% center;opacity:.36;-webkit-mask-image:linear-gradient(90deg,#000 0 68%,transparent 94%);mask-image:linear-gradient(90deg,#000 0 68%,transparent 94%)}.world-foundation:before{background-position:76% center;opacity:.32;-webkit-mask-image:linear-gradient(90deg,transparent 0 6%,#000 30%);mask-image:linear-gradient(90deg,transparent 0 6%,#000 30%)}}
 
 /* Final wordmark lock: one logo treatment across home, Reveal Fit, Foundation and footer. */
 .wordmark{display:inline-block;font-weight:600;letter-spacing:-.075em;font-size:42px;line-height:.86}
